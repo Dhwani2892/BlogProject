@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BlogProject.Feature.Postcard.Models.Article>
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc.Extensions
+@using Sitecore.Data.Items
+@if (Model.Any())
+{
+    <div class="row">
+        <!-- Begin Repeating Elements Area -->
+        <!-- Begin Repeating Element-->
+        @foreach (var data in Model)
+        {
+            <div class="blog-post-card card col-lg-4 col-md-6">
+                @Html.Raw(data.SmallImage)
+                <div class="card-body bg-light">
+                    <strong class="d-inline-block mb-2 text-success">@Html.Raw(data.BlogCategory)</strong>
+                    <h3 class="card-title">@Html.Raw(data.BlogTitle)</h3>
+                    <div class="mb-1 text-muted">@Html.Raw(data.BlogPostDate.ToString("MMM dd,yyyy"))</div>
+                    <p>@Html.Raw(data.ShortDescription)</p>
+                    <a href="/BlogDetail?ID=@Html.Raw(data.ID)" class="btn btn-warning btn-block" id="@Html.Raw(data.ID)" target="_blank">Read on</a>
+                </div>
+            </div>
+            <!-- End Repeating Element-->
+        }
+    </div>
+
+}
+
+
+
+

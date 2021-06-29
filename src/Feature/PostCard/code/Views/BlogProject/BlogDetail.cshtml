@@ -1,0 +1,30 @@
+﻿@model BlogProject.Feature.Postcard.Models.Article
+
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc.Extensions
+@using Sitecore.Data.Items
+@if (Model != null)
+{
+<div class="blog-post-detail-card card col-lg-12">
+    @Html.Raw(Model.LargeImage)
+    <div class="card-body bg-light">
+        <strong class="d-inline-block mb-2 text-success">@Html.Raw(Model.BlogCategory)</strong>
+        <h3 class="card-title">@Html.Raw(Model.BlogTitle)</h3>
+        <div class="mb-1 text-muted">@Html.Raw(Model.BlogPostDate)</div>
+        <p>@Html.Raw(Model.LongDescription) </p>
+        <div class="blog-detail-tag-list">
+            <span class="read-more-heading">Read more: </span>
+            @if(Model.Tags != null) {
+                foreach (var t in Model.Tags) {
+
+            <a class="btn btn-info" href="#" role="button">@Html.Raw(t)</a>
+            @*<a class="btn btn-info" href="#" role="button">Super Extra Long Tag</a>
+            <a class="btn btn-info" href="#" role="button">Extra Long Tag</a>*@
+                }
+            }
+
+        </div>
+    </div>
+</div>
+
+}

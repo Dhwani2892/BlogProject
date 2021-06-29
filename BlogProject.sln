@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{B2350782-3FA2-4F48-A99A-D61CFC4754BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{E514463A-E0D8-444B-B11F-AE47EAE95531}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{C6EDF12C-A35A-49F7-8F90-5EBB1F72EC7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{5BDCF69E-DF17-42A1-871F-A87E90668D59}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{EA00B08D-077A-4C7A-9A45-D21A54C851D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Search", "src\Feature\Search\code\BlogProject.Feature.Search.csproj", "{57EC3D5F-F404-4A8D-A666-E310DDED1F4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Header", "Header", "{E6F33E32-8EE7-49BF-8F7A-7F3E675B42CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Footer", "Footer", "{065C2CF5-6ECC-4A75-9B59-D4FF8ECCA70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Header", "src\Feature\Header\code\BlogProject.Feature.Header.csproj", "{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Footer", "src\Feature\Footer\code\BlogProject.Feature.Footer.csproj", "{C95FA736-D7CE-4ED9-AAF8-C049939076EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostCard", "PostCard", "{E6F23DC1-5E65-4735-B67D-777CE3224073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Feature.Postcard", "src\Feature\PostCard\code\BlogProject.Feature.Postcard.csproj", "{F85694C3-FCCB-4389-ABC4-D60F22847C39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EC3D5F-F404-4A8D-A666-E310DDED1F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EC3D5F-F404-4A8D-A666-E310DDED1F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EC3D5F-F404-4A8D-A666-E310DDED1F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EC3D5F-F404-4A8D-A666-E310DDED1F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95FA736-D7CE-4ED9-AAF8-C049939076EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95FA736-D7CE-4ED9-AAF8-C049939076EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95FA736-D7CE-4ED9-AAF8-C049939076EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95FA736-D7CE-4ED9-AAF8-C049939076EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85694C3-FCCB-4389-ABC4-D60F22847C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85694C3-FCCB-4389-ABC4-D60F22847C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85694C3-FCCB-4389-ABC4-D60F22847C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85694C3-FCCB-4389-ABC4-D60F22847C39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA00B08D-077A-4C7A-9A45-D21A54C851D6} = {C6EDF12C-A35A-49F7-8F90-5EBB1F72EC7B}
+		{57EC3D5F-F404-4A8D-A666-E310DDED1F4F} = {EA00B08D-077A-4C7A-9A45-D21A54C851D6}
+		{E6F33E32-8EE7-49BF-8F7A-7F3E675B42CF} = {C6EDF12C-A35A-49F7-8F90-5EBB1F72EC7B}
+		{065C2CF5-6ECC-4A75-9B59-D4FF8ECCA70C} = {C6EDF12C-A35A-49F7-8F90-5EBB1F72EC7B}
+		{73E64D2B-C524-4AB9-9DE3-9A85B6671BB7} = {E6F33E32-8EE7-49BF-8F7A-7F3E675B42CF}
+		{C95FA736-D7CE-4ED9-AAF8-C049939076EA} = {065C2CF5-6ECC-4A75-9B59-D4FF8ECCA70C}
+		{E6F23DC1-5E65-4735-B67D-777CE3224073} = {C6EDF12C-A35A-49F7-8F90-5EBB1F72EC7B}
+		{F85694C3-FCCB-4389-ABC4-D60F22847C39} = {E6F23DC1-5E65-4735-B67D-777CE3224073}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14B5FA62-AB1F-4242-B9C1-888E704C34A2}
+	EndGlobalSection
+EndGlobal

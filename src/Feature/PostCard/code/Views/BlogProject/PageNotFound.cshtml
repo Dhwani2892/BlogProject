@@ -1,0 +1,9 @@
+﻿@{
+    //var item = Sitecore.Context.Database.GetItem("/sitecore/content/Home/BlogProject/Settings/LocalSettings");
+    var item = Sitecore.Context.Database.GetItem("{DF7F43F1-25FD-4DCD-80AE-FCAC6626C8CD}");
+}
+<div class="row">
+    <div class="input-group">
+        <h4 class="lead" style="color:white">@Html.Sitecore().Field("ShortDescription", item)</h4>
+    </div>
+</div>

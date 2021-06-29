@@ -1,0 +1,12 @@
+﻿@{
+    //var item = Sitecore.Context.Database.GetItem("/sitecore/content/Home/BlogProject/Settings/LocalSettings");
+    var item = Sitecore.Context.Database.GetItem("{BB60F307-7B16-4661-9392-4F9A0EBBCA42}");
+}
+<header>
+    <div class="container">
+        <div class="jumbotron text-white bg-primary">
+            <h1 class="display-3">@Html.Sitecore().Field("Heading", item)</h1>
+            <p class="lead">@Html.Sitecore().Field("SubHeading", item)</p>
+        </div>
+    </div><!-- /.container -->
+</header>

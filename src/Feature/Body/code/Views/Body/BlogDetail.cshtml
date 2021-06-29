@@ -1,0 +1,25 @@
+﻿@model BlogProject.Feature.Body.Models.BodyModel
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc.Extensions
+@using Sitecore.Data.Items
+@if (Model != null)
+{
+    <div class="blog-post-detail-card card col-lg-12">
+        @Model.LargeImage
+        <div class="card-body bg-light">
+            <strong class="d-inline-block mb-2 text-success">@Model.BlogCategory</strong>
+            <h3 class="card-title">@Model.BlogTitle</h3>
+            <div class="mb-1 text-muted">@Model.BlogPostDate</div>
+            <p>@Model.LongDescription </p>
+            <div class="blog-detail-tag-list">
+                <span class="read-more-heading">Read more: </span>
+                <a class="btn btn-info" href="#" role="button">Tag</a>
+                <a class="btn btn-info" href="#" role="button">Super Extra Long Tag</a>
+                <a class="btn btn-info" href="#" role="button">Extra Long Tag</a>
+
+
+            </div>
+        </div>
+    </div>
+
+}
